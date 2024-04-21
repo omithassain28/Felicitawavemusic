@@ -46,12 +46,12 @@ module.exports = class Invite extends Command {
         .setLabel("Invite")
         .setStyle(ButtonStyle.Link)
         .setURL(
-          `https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=8&scope=bot%20applications.commands`
+          `https://discord.gg/47pCJuCEac`
         ),
       new ButtonBuilder()
         .setLabel("My Server")
         .setStyle(ButtonStyle.Link)
-        .setURL("https://discord.gg/STXurwnZD5")
+        .setURL("https://discord.gg/47pCJuCEac")
     );
     return await ctx.sendMessage({
       embeds: [
