@@ -2,6 +2,14 @@ const { ShardingManager } = require('discord.js');
 const fs = require('fs');
 const config = require('./config.js');
 const Logger = require('./structures/Logger.js');
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => {
+  res.send('Hello Express app!')
+});
+app.listen(3000, () => {
+  console.log('[INFO] Bot Online!');
+});
 
 const logger = new Logger();
 
