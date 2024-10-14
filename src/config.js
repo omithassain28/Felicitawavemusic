@@ -41,6 +41,12 @@ module.exports = {
             name: process.env.LAVALINK_NAME,
             secure: parseBoolean(process.env.LAVALINK_SECURE) || false,
         },
+        {
+            url: process.env.LAVALINK_URLL,
+            auth: process.env.LAVALINK_AUTHH,
+            name: process.env.LAVALINK_NAMEE,
+            secure: parseBoolean(process.env.LAVALINK_SECURE) || false,
+        },
     ],
 };
 function parseBoolean(value) {
